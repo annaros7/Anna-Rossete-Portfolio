@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Rossete</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo-ar-2.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="sessao-logo">
+            <a href="#pag-inicial"> <img class="logo-ar" src="assets/img/logo_ar.png" alt="Logo AR" width="50rem"></a>
+        </div>
+        <div class="sessao-menu">
+            <a class="atalho-menu" href="#pag-sobre">Sobre Anna</a>
+            <a class="atalho-menu" href="#projetos">Projetos</a>
+            <a class="atalho-menu" href="#contato">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="pag-inicial" id="pag-inicial">
+            <div class="titulo-subtitulo">
+                <p><span class="titulo">Anna Rossete</span><br> Desenvolvedora Frontend</p>
+            </div>
+            <div class="btn-atalhos">
+                <a href="#pag-sobre"><button class="btn">Sobre Anna</button></a>
+                <a href="#projetos"><button class="btn">Projetos</button></a>
+                <a href="#contato"><button class="btn">Contato</button></a>
+            </div>
+        </section>
+
+        <section class="pag-sobre" id="pag-sobre">
+            <div class="foto-perfil">
+                <img class="foto-anna" src="assets/img/foto-anna.jpg" alt="Anna Rossete" width="50rem">
+            </div>
+
+            <div class="descritivo">
+                <div class="area-sobre-anna">
+                    <p class="sobre-anna">Sobre Anna</p>
+                </div>
+
+                <div class="formacao">
+                    Analista de Sistemas com foco em desenvolvimento web <br> 
+                    e frontend, formada pela Universidade Santa Cecília. <br><br>
+                    Atua com HTML, CSS e JavaScript, enxergando o código como meio <br>
+                    para transformar ideias em experiências digitais organizadas e estratégicas. <br><br>
+                    Valoriza estrutura, clareza e estratégia, criando interfaces <br>
+                    que equilibram funcionalidade, estética e propósito.
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="area-titulo-projetos">
+                <p class="titulo-projetos">Projetos</p>
+            </div>
+            <div class="area-projetos">
+                <a href="https://annaros7.github.io/ConvertPrices/" target="_blank"><img src="assets/img/tela-conversor.png" alt="Print da tela do conversor de preços" class="frames" width="500rem"></a>
+                <a href="https://annaros7.github.io/calculadora_IMC/" target="_blank"><img src="assets/img/tela-imc.png" alt="Print da tela da calculadora de IMC" class="frames"width="500rem"></a>
+                <a href="https://annaros7.github.io/Advogada-Laura-Monteiro/" target="_blank"><img src="assets/img/tela-lp-adv.png" alt="Print da tela da landing page da advogada" class="frames"width="500rem"></a>
+
+                <!--Duplicados - efeito carrossel-->
+                <a href="https://annaros7.github.io/ConvertPrices/" target="_blank"><img src="assets/img/tela-conversor.png" alt="Print da tela do conversor de preços" class="frames"></a>
+                <a href="https://annaros7.github.io/calculadora_IMC/" target="_blank"><img src="assets/img/tela-imc.png" alt="Print da tela da calculadora de IMC" class="frames"></a>
+                <a href="https://annaros7.github.io/Advogada-Laura-Monteiro/" target="_blank"><img src="assets/img/tela-lp-adv.png" alt="Print da tela da landing page da advogada" class="frames"></a>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="area-contato">
+                <p class="titulo-contato">Contato</p>
+            </div>
+            <div class="area-contato-img">
+                <form action="https://formspree.io/f/xvzbzvly" method="POST">
+                <label>
+                    <p class="titulo-form">Seu email:</p>
+                    <input type="email" name="email" class="email">
+                </label>
+                <label>
+                    <p class="titulo-form">Sua mensagem:</p>
+                    <input name="message" class="mensagem"></input>
+                </label>
+                <button type="submit" class="btn-enviar-form">Enviar</button>
+                </form>
+            </div>
+            <p class="copy">&copy; Copyright Anna Rossete</p>
+        </section>
+    </main>
+</body>
+</html>
