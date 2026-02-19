@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -64,6 +65,8 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    scroll-snap-align: start;
 }
 
 .titulo-subtitulo {
@@ -113,6 +116,8 @@ a {
     align-items: center;
 
     height: 100vh;
+
+    scroll-snap-align: start;
 }
 
 .foto-perfil {
@@ -170,6 +175,8 @@ a {
 .projetos {
     height: 100vh;
     overflow: hidden;
+
+    scroll-snap-align: start;
 }
 
 .area-titulo-projetos {
@@ -237,6 +244,8 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 40px;
+
+    scroll-snap-align: start;
 }
 
 .area-contato {
@@ -313,6 +322,49 @@ input:hover {
     background-color: #F8F8F8;
 }
 
+.consentimento {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: .9rem;
+
+    color: #F8F8F8;
+}
+
+.consentimento label {
+    display: inline;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #A62DD6;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.fechar {
+    background-color: #F8F8F8;
+    color: #A62DD6;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
 .btn-enviar-form {
     padding: 1rem;
     width: 15rem;
@@ -329,6 +381,12 @@ input:hover {
     color: #F8F8F8;
 
     transition: all .3s ease-in-out;
+}
+
+.links-contato {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .copy {
