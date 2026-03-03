@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 *::-webkit-scrollbar {
-    scrollbar-width: thin;
-    background-color: #0F0F0F;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg,rgba(166, 45, 214, 1) 0%, rgba(72, 24, 115, 1) 100%);
-    border-radius: 5px;
-}
-
-html, body {
-    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 html {
@@ -39,22 +29,18 @@ header {
     justify-content: space-around;
     position: fixed;
     background-color: #0f0f0f88;
-    z-index: 1000;
 }
 
-.secao-logo {
+.sessao-logo {
     display: flex;
     justify-content: start;
-    width: 5rem;
-    height: 5rem;
 }
 
 .logo-ar {
-    width: 100%;
-    height: 100%;
+    width: 30%;
 }
 
-.secao-menu {
+.sessao-menu {
     display: flex;
     justify-content: flex-end;
     gap: 4rem;
@@ -109,7 +95,7 @@ a {
 }
 
 .btn {
-    color: #F8F8F8;
+    color: var(--text);
     background-color: #A62DD6;
     border: none;
     border-radius: 50px;
@@ -197,7 +183,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 30%;
+    height: 40%;
 }
 
 .titulo-projetos {
@@ -300,7 +286,6 @@ input {
     border: none;
     outline: none;
 
-    width: 50rem;
     font-weight: 600;
     font-size: 1.1rem;
     color: #A62DD6;
@@ -324,30 +309,26 @@ input:hover {
 
 .nome, .email {
     padding: 1rem;
-    max-width: 40rem;
+    width: 40rem;
     border-radius: 5px;
     background-color: #F8F8F8;
 }
 
 .mensagem {
     padding: 1rem;
-    max-width: 40rem;
+    width: 40rem;
     height: 5rem;
     border-radius: 5px;
     background-color: #F8F8F8;
 }
 
 .consentimento {
-    width: 40%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-
+    justify-content: flex-start;
     font-size: .9rem;
-    color: #F8F8F8;
-}
 
-#consentimento {
-    width: 15%;
+    color: #F8F8F8;
 }
 
 .consentimento label {
@@ -413,73 +394,4 @@ input:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/*Responsividade - Mobile*/
-
-@media (max-width: 480px) {
-    * {
-        width: 100%;
-    }
-    header {
-        width: 100%;
-        font-size: .8rem;
-    }
-    .secao-menu {
-        gap: 1rem;
-    }
-    .pag-inicial {
-        margin-bottom: -80px;
-    }
-    .btn-atalhos {
-        gap: 4px;
-    }
-    .pag-sobre {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .area-sobre-anna {
-        padding-left: 90px;        
-    }
-    .sobre-anna{
-        width: 100%;
-        border-radius: 20px 0 0 20px;
-    }
-    .foto-perfil {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-    }
-    .formacao {
-        margin-top: -5rem;
-        margin-left: -5rem;
-        width: 100%;
-        line-height: 25px;
-    }
-    .texto-formacao {
-        width: 15rem;
-    }
-    .projetos {
-        margin-top: 10rem;
-    }
-    .contato{
-        max-width: 100%;
-    }
-    label p, input {
-        width: 15rem;
-    }
-    .consentimento {
-        width: 50%;
-        flex-direction: column;
-    }
-    .footer {
-        width: 30%;
-        flex-direction: column;
-    }
-    .copy {
-        font-size: .5rem;
-    }
 }
