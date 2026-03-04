@@ -8,17 +8,17 @@
     <link rel="shortcut icon" href="assets/img/logo-ar-2.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="sessao-logo">
-            <a href="#pag-inicial"> <img class="logo-ar" src="assets/img/logo_ar.png" alt="Logo AR" width="50rem"></a>
-        </div>
-        <div class="sessao-menu">
-            <a class="atalho-menu" href="#pag-sobre">Sobre Anna</a>
-            <a class="atalho-menu" href="#projetos">Projetos</a>
-            <a class="atalho-menu" href="#contato">Contato</a>
-        </div>
-    </header>
-
+    <div class="site-wrapper">
+        <header>
+            <div class="secao-logo">
+                <a href="#pag-inicial"> <img class="logo-ar" src="assets/img/logo_ar.png" alt="Logo AR"></a>
+            </div>
+            <div class="secao-menu">
+                <a class="atalho-menu" href="#pag-sobre">Sobre Anna</a>
+                <a class="atalho-menu" href="#projetos">Projetos</a>
+                <a class="atalho-menu" href="#contato">Contato</a>
+            </div>
+        </header>
     <main>
         <section class="pag-inicial" id="pag-inicial">
             <div class="titulo-subtitulo">
@@ -42,12 +42,14 @@
                 </div>
 
                 <div class="formacao">
-                    Analista de Sistemas com foco em desenvolvimento web <br> 
-                    e frontend e web design, formada pela Universidade Santa Cecília. <br><br>
-                    Atua com HTML, CSS e JavaScript, enxergando o código como meio <br>
-                    para transformar ideias em experiências digitais organizadas e estratégicas. <br><br>
-                    Valoriza estrutura, clareza e estratégia, criando interfaces <br>
-                    que equilibram funcionalidade, estética e propósito.
+                    <p class="texto-formacao">
+                        Analista de Sistemas com foco em desenvolvimento web <br> 
+                        e frontend e web design, formada pela Universidade Santa Cecília. <br><br>
+                        Atua com HTML, CSS e JavaScript, enxergando o código como meio <br>
+                        para transformar ideias em experiências digitais organizadas e estratégicas. <br><br>
+                        Valoriza estrutura, clareza e estratégia, criando interfaces <br>
+                        que equilibram funcionalidade, estética e propósito.
+                    </p>
                 </div>
             </div>
         </section>
@@ -103,7 +105,7 @@
                 <button type="submit" class="btn-enviar-form">Enviar</button>
                 </form>
             </div>
-            <div>
+            <div class="footer">
                 <div class="links-contato">
                     <a href="https://www.linkedin.com/in/annarossete/" target="_blank"><img src="assets/img/001-linkedin.png" alt="Logo do linkedin"></a>
                     <a href="https://github.com/annaros7" target="_blank"><img src="assets/img/002-github-logo.png" alt="Logo do Github"></a>
@@ -113,5 +115,6 @@
             </div>
         </section>
     </main>
+    </div>
 </body>
 </html>
